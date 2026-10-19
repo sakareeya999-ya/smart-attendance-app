@@ -31,7 +31,7 @@ yarn-error.*
 *.pem
 
 # local env files
-.env*.local
+.env
 
 # typescript
 *.tsbuildinfo
@@ -39,3 +39,31 @@ yarn-error.*
 # generated native folders
 /ios
 /android
+
+
+# Environment and secrets
+.env*
+!.env.example
+!.env.sample
+
+# Firebase credentials
+serviceAccountKey.json
+service-account*.json
+*-firebase-adminsdk-*.json
+
+# Dependencies and build output
+**/node_modules/
+**/dist/
+**/build/
+
+.env
+.env*
+
+
+.env
+.env.*
+!.env.example
+**/node_modules/
+**/secrets/
+**/serviceAccountKey.json
+**/*-firebase-adminsdk-*.json
